@@ -1,0 +1,24 @@
+program usarCons
+
+! Ejemplo del uso de un programa con constantes 
+implicit none 
+
+! Declaracion de constantes 
+real, parameter :: ganzoni = 2.4 
+integer, parameter :: deposito = 500 
+integer, parameter :: hbtarget = 13 
+
+! Declaracion de variables 
+real :: peso, hb, deficit 
+
+! Asignar valores 
+peso = 70 
+hb = 6.8 
+
+! Operaciones 
+deficit = ((hbtarget - hb)*ganzoni)*peso + deposito 
+
+! Presentar resultados 
+print *, 'El deficit de hierro en miligramos es de', deficit 
+
+end program 
