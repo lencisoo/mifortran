@@ -1,0 +1,32 @@
+program variabilidad 
+
+! Programa para probar tipos de variables en Fortran 
+implicit none 
+
+! Declarar variables reales 
+real :: a,b,c, resultados
+
+! Declarar variables enteras
+
+integer :: d,e,f 
+
+! Declarar variables caracter 
+character(len = 80) :: message ! a string of 80 characters
+
+! Asignar valores 
+a = 2.1
+b = 4.56
+c = 6.35
+d = 3
+e = 18 
+f = 1000 
+message = 'Me gusta la noche, cuando la lluvia...'
+
+! Operaciones 
+resultados = a*b*c+d/e*f
+
+! Presentar variables 
+print *, 'Los nuevos casos son', resultados
+print *, message
+
+end program 
